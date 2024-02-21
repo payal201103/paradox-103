@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!--ARRAY METHOD-->
+     <script>
+
+        //To String
+        let num = [1, 2, 3, 34, 4]  // array convert to string
+        let B = num.toString()
+        console.log(B)
+        // join()
+        let C = num.join("_") // array element to join and using sepreter
+        console.log(C)
+        //pop()
+        let R = num.pop()  // pop remove last element(4-popped) ..pop returns the popped element
+        console.log(R)
+
+        //push()
+        let dailyActivities = ['eat', 'sleep'];
+        dailyActivities.push('exercise'); // push return the new array length
+        console.log(dailyActivities);
+
+        //shift()
+        dailyActivities.shift('eat'); // remove first element
+        console.log(dailyActivities);
+
+        //unshift()
+        dailyActivities.unshift('work');
+        console.log(dailyActivities); // add new element to first position
+
+        //cocat()
+        let NUM = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        let NUM_more = [11, 12, 13, 14, 15, 16, 17, 18, 19]
+        let newarray = num.concat(NUM_more) // marge the array 
+        console.log(newarray)
+
+        //sort()
+        let Num = [551, 22, 13, 3, 4, 6, 16, 78, 89]
+        Num.sort()  //sorting the original array
+        console.log(Num)
+        //ascending order
+        let compare = (a, b) => {  // campare to value 
+            return b - a
+        }
+        Num.sort(compare)
+        console.log(Num)
+        //revers
+        Num.reverse()
+        console.log(Num)
+        //Splice 
+        Num.splice(2, 3, 1021, 1031, 1024, 1026) // position,no. of remove element and add element
+        console.log(Num) // returns deleted items and modifies the array 
+        //slice
+        let newNum = Num.slice(3)
+        console.log(newNum)
+
+        //delete ( operator)
+        let variable = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        console.log(variable.length)
+        delete variable[0]
+        console.log(variable.length)
+
+
+    </script>
+</body>
+</html>
